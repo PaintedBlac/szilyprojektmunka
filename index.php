@@ -15,8 +15,8 @@ try {
     password CHAR(60) NOT NULL,
     reg_date TIMESTAMP)";
     $pdo->exec($sql);
-
-    $pdo;
+    
+    $valtozo = 1;
     
 } catch (PDOException $e) {
     echo $e->getMessage();
