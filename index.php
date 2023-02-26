@@ -51,10 +51,6 @@ $email = $_POST["email"];
 $options = ['cost' => 12,];
 $password = password_hash($_POST["password"], PASSWORD_BCRYPT, $options); //A jelszót hashelem
 
-
-echo $email;
-echo '<br>';
-echo $password;   
     
 } catch (PDOException $e) {
     echo $e->getMessage();
