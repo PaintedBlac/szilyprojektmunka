@@ -9,12 +9,12 @@ try {
     $sql = "CREATE DATABASE IF NOT EXISTS projekt_adatbazis"; //Létrehozom az adatbázis, ha még nem lenne meg.
     $pdo->exec($sql);
     
-    $sql = "CREATE TABLE IF NOT EXISTS projekt_adatbazis.users(
+    $sql = "CREATE TABLE IF NOT EXISTS projekt_adatbazis.users( 
     id INT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(20) NOT NULL,
     password CHAR(60) NOT NULL,
     reg_date TIMESTAMP)";
-    $pdo->exec($sql);
+    $pdo->exec($sql); //Létrehozom az users táblát, ha még nem lenne meg.
     
     $valtozo = 1;
     
